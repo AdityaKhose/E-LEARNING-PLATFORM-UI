@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>E-Learning UI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <h2>LearnSpace</h2>
+</header>
+
+<section class="courses">
+  <h3>Available Courses</h3>
+
+  <div class="course-card">
+    <h4>Frontend Development</h4>
+    <p>HTML, CSS & JavaScript basics</p>
+    <progress value="40" max="100"></progress>
+    <button onclick="openCourse()">Continue</button>
+  </div>
+
+  <div class="course-card">
+    <h4>Web Design Fundamentals</h4>
+    <p>UI, UX and layouts</p>
+    <progress value="70" max="100"></progress>
+    <button onclick="openCourse()">Continue</button>
+  </div>
+</section>
+
+<section class="player" id="playerSection">
+  <h3>Course Player</h3>
+  <iframe 
+    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+    allowfullscreen>
+  </iframe>
+</section>
+
+<script src="ui.js"></script>
+</body>
+</html>
